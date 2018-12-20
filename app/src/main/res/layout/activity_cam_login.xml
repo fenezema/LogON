@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CamLoginActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusKondisi"
+        android:text="INIT"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.wonderkiln.camerakit.CameraView xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/camlogin"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            camerakit:ckCropOutput="true"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="50dp"
+            android:id="@+id/camswitch"
+            android:layout_height="50dp"
+            android:paddingLeft="8dp"
+            android:drawableStart="@android:drawable/ic_menu_revert"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:onClick="switchCam"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="50dp"
+            android:id="@+id/cambtn"
+            android:paddingLeft="8dp"
+            android:layout_height="50dp"
+            android:drawableStart="@android:drawable/ic_menu_camera"
+            android:drawableLeft="@android:drawable/ic_menu_camera"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

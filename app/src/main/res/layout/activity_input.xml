@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <Button
+        android:id="@+id/tombolNRP"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/absenNRP"
+        android:layout_alignTop="@+id/btnSendSignature"
+        android:layout_gravity="center"
+        android:text="Take Data" />
+
+    <Button
+        android:id="@+id/btnSendSignature"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnTrainSignature"
+        android:layout_gravity="center"
+        android:layout_marginTop="83dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Take Data Signature" />
+
+    <Button
+        android:id="@+id/absenNRP"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/predictNRP"
+        android:layout_alignTop="@+id/btnTrainSignature"
+        android:layout_gravity="center"
+        android:text="Train" />
+
+    <Button
+        android:id="@+id/btnTrainSignature"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnPredictTTD"
+        android:layout_gravity="center"
+        android:layout_marginTop="201dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Train Signature" />
+
+
+    <Button
+        android:id="@+id/predictNRP"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnPredictTTD"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/signinNRP"
+        android:text="Predict" />
+
+    <Button
+        android:id="@+id/btnPredictTTD"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="147dp"
+        android:layout_toEndOf="@+id/signinNRP"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Predict TTD" />
+
+    <Button
+        android:id="@+id/signinNRP"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="28dp"
+        android:text="SIGN IN" />
+</RelativeLayout>
